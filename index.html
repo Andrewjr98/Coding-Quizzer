@@ -10,20 +10,24 @@
 <body>
 <div class="nav">
     <nav> <a class="viewHighsscores" href="#View-Highscores">View-Highscores</a></nav>
-    <nav class="timer-count">Time left:</nav>
+    <nav class="timer-count">Time left:
+        <span id="counter">75</span>
+    </nav>
+    
 </div>
 <div class="container">
     <h2 class="Questions">Coding-Quizzer</h2>
 <div id=" question-container" class="hide">
+    <h4 class="QuestionsPopulated"></h4>
     <ol class="answerButtons">
-        <li><input type="button" id="rightAnswer" name="rightAnswer" label="1."></li>
-        <li><input type="button" id="wrongAnswer" name="wrongAnswer"  label="2."></li>
-        <li><input type="button" id="wrongAnswer" name="wrongAnswer"  label="3."></li>
-        <li><input type="button" id="wrongAnswer" name="wrongAnswer" label="4."></li>
+        <li><input type="button" class="answerOption" id="answer_0" label="1."></li>
+        <li><input type="button" class="answerOption" id="answer_1" label="2."></li>
+        <li><input type="button" class="answerOption" id="answer_2" label="3."></li>
+        <li><input type="button" class="answerOption" id="answer_3" label="4."></li>
       </ol>
 </div>
 <div class="controls">
-    <button class="start">Start</button>
+    <button class="start" onclick="init()">Start</button>
     <button class="next">Next</button>
 </div>
 <footer>
